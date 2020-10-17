@@ -5,7 +5,7 @@ def aTag(link, text):
 #def navTag()
 
 def build(fName):
-    indexTemplate = open(fName[:fName.index(".")]+"-template"+fName[fName.index("."):], "r")
+    indexTemplate = open("assets/templates/"+fName[:fName.index(".")]+"-template"+fName[fName.index("."):], "r")
     index = open(fName, "w")
 
     for l in indexTemplate.readlines():
