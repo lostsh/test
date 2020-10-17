@@ -23,6 +23,12 @@ jobs:
     - name: Bash build site
       run: |
         bash echo "<html>\n<head>\n<meta charset=\"utf-8\"/>\n<title>Py Builded</title>\n</head>\n<body>\n<h1>Hello word</h1>\n</body>\n</html>" >> index.html
+    - name: Publish website
+      run: |
+        git add .
+        git commit -m "Publish website"
+        git fetch origin main
+        git push origin HEAD:main
     #- name: Run script
      # run: |
       #  python blog.py
