@@ -1,4 +1,4 @@
-file = open("index.html", "w+")
+file = open("index.html", "w")
 
 file.write("<!DOCTYPE html>\n\
 <html>\n\
