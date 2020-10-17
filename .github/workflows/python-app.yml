@@ -27,6 +27,8 @@ jobs:
       run: |
         git config user.email "0pdlna3@gmail.com"
         git config user.name "lostsh Action"
+    - name: Checkout
+      run: git checkout public
     - name: Add
       run: git add index.html
     - name: Commit
