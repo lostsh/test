@@ -7,7 +7,7 @@ file.write("<!DOCTYPE html>\n\
         <title>Py Builded</title>\n\
     </head>\n\
     <body>\n\
-        <h1>Hello word</h1>\n\
+        <h1>Hello word this is a new version !</h1>\n\
     </body>\n\
 </html>")
 
