@@ -22,7 +22,7 @@ jobs:
         python -m pip install --upgrade pip
     - name: Bash build site
       run: |
-        echo "<html>\n<head>\n<meta charset=\"utf-8\"/>\n<title>Py Builded</title>\n</head>\n<body>\n<h1>Hello word</h1>\n</body>\n</html>" >> index.html
+        bash echo "<html>\n<head>\n<meta charset=\"utf-8\"/>\n<title>Py Builded</title>\n</head>\n<body>\n<h1>Hello word</h1>\n</body>\n</html>" >> index.html
     #- name: Run script
      # run: |
       #  python blog.py
