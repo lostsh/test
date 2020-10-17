@@ -20,6 +20,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Run script
+    - name: Bash build site
       run: |
-        python blog.py
+        echo "<html>\n<head>\n<meta charset=\"utf-8\"/>\n<title>Py Builded</title>\n</head>\n<body>\n<h1>Hello word</h1>\n</body>\n</html>" >> index.html
+    #- name: Run script
+     # run: |
+      #  python blog.py
