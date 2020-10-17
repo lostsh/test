@@ -1,14 +1,15 @@
-file = open("index.html", "w")
+def build(fName):
+    indexTemplate = open(fName[:fName.index(".")]+"-template"+fName[fName.index("."):], "r")
+    index = open(fName, "w")
 
-file.write("<!DOCTYPE html>\n\
-<html>\n\
-    <head>\n\
-        <meta charset=\"utf-8\"/>\n\
-        <title>Py Builded</title>\n\
-    </head>\n\
-    <body>\n\
-        <h1>Hello word this is a new version !</h1>\n\
-    </body>\n\
-</html>")
+    for l in indexTemplate.readlines():
+        if "[TITLE]" in l:
+            l = l.replace("[TITLE]", "This is the title of ths blog")
+        elif "[PARAGRAPH]" in l:
+            l = l.replace("[PARAGRAPH]", "Hello world I am lama !")
+        index.write(l)
+    
+    index.close()
+    indexTemplate.close()
 
-file.close()
+build("index.html")
